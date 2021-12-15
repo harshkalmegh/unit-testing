@@ -18,3 +18,13 @@ test("check for positive number is not zero", () => {
     }
   }
 });
+
+// Checking for null
+test("checking for null", () => {
+  const a = null;
+  expect(a).toBeNull();
+  expect(a).toBeDefined();
+  expect(a).not.toBeUndefined();
+  expect(a).not.toBeTruthy();
+  expect(a).toBeFalsy();
+});
