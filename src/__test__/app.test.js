@@ -28,3 +28,13 @@ test("checking for null", () => {
   expect(a).not.toBeTruthy();
   expect(a).toBeFalsy();
 });
+
+// Checking for decimal point
+test("checking for decimal points", () => {
+  expect(1.12 + 3.14).toBeCloseTo(4.26);
+});
+
+// Checking for String
+test("Checking for String", () => {
+  expect("I am Harsh Kalmegh").toMatch(/Harsh/);
+});
